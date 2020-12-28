@@ -1,10 +1,8 @@
 package com.iyang.bean.bd;
 
 import com.iyang.bean.pojo.Person;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +16,9 @@ import org.springframework.stereotype.Component;
 @Import(ImportBeanConfigMain.ImportConfig.class)
 @ComponentScan(basePackages = "com.iyang.bean.bd")
 public class ImportBeanConfigMain {
+
+
+
 
     public ImportBeanConfigMain(){
         System.out.println("ImportBeanConfigMain 无参数构造函数");

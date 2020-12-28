@@ -2,6 +2,7 @@ package com.iyang.bean.bd;
 
 import com.iyang.bean.pojo.Person;
 import org.springframework.beans.MutablePropertyValues;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
@@ -16,7 +17,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  *  通过手动创建 bd , 调用 set 方法给注入到 Spring 容器中.
  */
 public class BeanDefinitionCreateAndRegister {
-
 
     public static void main(String[] args) {
 
