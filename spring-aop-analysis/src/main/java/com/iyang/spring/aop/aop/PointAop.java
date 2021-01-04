@@ -39,7 +39,7 @@ public class PointAop {
     }
 
     //@Around(value = "execution(* com.iyang.spring.aop.service..*.*(..))")
-    @Around("pointCut()")
+/*    @Around("pointCut()")
     public void callAround(ProceedingJoinPoint pjp){
         System.out.println("调用callAround方法");
         try{
@@ -48,6 +48,6 @@ public class PointAop {
 
         }
 
-    }
+    }*/
 
 }

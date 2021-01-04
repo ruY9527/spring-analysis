@@ -11,6 +11,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class PointService {
 
+    public PointService(){
+        System.out.println("PointService无参构造函数");
+    }
+
     public String say(){
         System.out.println("调用 PointService 的 say 方法");
 
