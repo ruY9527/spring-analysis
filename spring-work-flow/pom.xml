@@ -4,35 +4,39 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.ruY9527</groupId>
+        <artifactId>spring-analysis</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+<!--
     <groupId>com.iyang</groupId>
     <artifactId>spring-work-flow</artifactId>
     <version>1.0-SNAPSHOT</version>
+-->
 
+    <artifactId>spring-work-flow</artifactId>
     <description>Spring_Work_Flow大致流程的分析和阅读.</description>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
 
     <dependencies>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
     </dependencies>
